@@ -1,0 +1,87 @@
+/* Body background and centering */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Blurred container */
+.glass-box {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  max-width: 400px;
+  width: 90%;
+}
+
+/* Inner content layout */
+.glass-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#display {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  font-family: monospace;
+  color: black;
+}
+
+/* Buttons styling */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  color: white;
+}
+
+button:nth-child(1) { background: #22c55e; } /* Start */
+button:nth-child(2) { background: #ef4444; } /* Stop */
+button:nth-child(3) { background: #eab308; color: black; } /* Reset */
+button:nth-child(4) { background: #3b82f6; } /* Lap */
+
+button:hover {
+  opacity: 0.85;
+}
+
+/* Lap times */
+.laps {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  max-height: 150px;
+  overflow-y: auto;
+  width: 100%;
+  text-align: left;
+  font-size: 0.9rem;
+  color: black;
+}
