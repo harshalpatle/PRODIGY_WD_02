@@ -83,6 +83,10 @@ button:hover {
 
 /* Lap times */
 .laps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   list-style: none;
   padding: 0;
   margin-top: 1rem;
