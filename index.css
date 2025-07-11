@@ -6,8 +6,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-image: url('https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg');
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("https://images.pexels.com/photos/7130469/pexels-photo-7130469.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
   background-size: cover;
   background-position: center;
 }
@@ -29,7 +29,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: black;
+  color: rgb(53, 53, 53);
 }
 
 h1 {
@@ -42,7 +42,7 @@ h1 {
   font-weight: bold;
   margin-bottom: 1.5rem;
   font-family: monospace;
-  color: black;
+  color: rgb(53, 53, 53);
 }
 
 /* Buttons styling */
@@ -64,10 +64,18 @@ button {
   color: white;
 }
 
-button:nth-child(1) { background: #22c55e; } /* Start */
-button:nth-child(2) { background: #ef4444; } /* Stop */
-button:nth-child(3) { background: #eab308; color: black; } /* Reset */
-button:nth-child(4) { background: #3b82f6; } /* Lap */
+button:nth-child(1) {
+  background: #22c55e;
+} /* Start */
+button:nth-child(2) {
+  background: #ef4444;
+} /* Stop */
+button:nth-child(3) {
+  background: #eab308;
+} /* Reset */
+button:nth-child(4) {
+  background: #3b82f6;
+} /* Lap */
 
 button:hover {
   opacity: 0.85;
